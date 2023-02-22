@@ -1,0 +1,77 @@
+---
+import { changeLanguage } from "i18next";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Services from "@components/services.astro";
+import consulting from "../../assets/consulting.jpg";
+import design from "../../assets/design.jpg";
+import packanddeliver from "../../assets/packanddeliver.jpg";
+import production from "../../assets/production.jpg";
+import qcprocess from "../../assets/qcprocess.jpg";
+
+changeLanguage("th");
+
+const services = [
+    {
+        name: "Consulting",
+        description: "TD Product can provide consulting services to give you direction or feedback on your needs.",
+        button: {
+            text: "Learn More",
+            link: "/",
+        },
+        image: consulting
+    },
+    {
+        name: "Design Process",
+        description: "Printing is a tool that helps you communicate what you want your customers to understand about your products/services. We can help improve your communication with our services such as:",
+        button: {
+            text: "Learn More",
+            link: "/",
+        },
+        image: design
+    },
+    {
+        name: "Production Process",
+        description: "Printing is a tool that helps you communicate what you want your customers to understand about your products/services. We can help improve your communication with our services such as:",
+        button: {
+            text: "Learn More",
+            link: "/",
+        },
+        image: production
+    },
+    {
+        name: "QC Process",
+        description: "Printing is a tool that helps you communicate what you want your customers to understand about your products/services. We can help improve your communication with our services such as:",
+        button: {
+            text: "Learn More",
+            link: "/",
+        },
+        image: qcprocess
+    },
+    {
+        name: "Packaging & Delivery",
+        description: "Printing is a tool that helps you communicate what you want your customers to understand about your products/services. We can help improve your communication with our services such as:",
+        button: {
+            text: "Learn More",
+            link: "/",
+        },
+        image: packanddeliver
+    },
+];
+---
+
+<Layout title="บริการ">
+  <Container>
+     <Sectionhead>
+       <Fragment slot="title">Services</Fragment>
+       <Fragment slot="desc"
+         >Whatever your business needs are, we can meet them.</Fragment>
+     </Sectionhead>
+      <div class="grid gap-10 mx-auto max-w-screen-lg mt-12">
+        {services.map((item) => <Services services={item} />)}
+      </div>
+  </Container>
+</Layout>
+
+

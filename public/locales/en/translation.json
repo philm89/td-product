@@ -1,0 +1,103 @@
+{
+    "seo": {
+      "title": "TD Product | A Printing and Packaging Company",
+      "description": "TD Product is a printing and packaging provider serving businesses of all sizes. Relying on over 40 years of experience, we provide high quality products and service to all of our customers!"
+    },
+    "pages": {
+      "home": {
+        "title1": "All your Printing & Packaging Needs",
+        "subtitle1": "TD Product is a printing and packaging provider serving businesses of all sizes. Relying on over 40 years of experience, we provide high quality products and service to all of our customers!",
+        "title2": "Want to know what makes us special",
+        "subtitle2": "TD Product is ready to supply your business with all the printing and packaging services you need."
+      },
+        "about": {
+          "title": "About",
+          "path": "about"
+        },
+        "services": {
+          "title": "Services",
+          "path": "services"
+        },
+        "products": {
+          "title": "Products",
+          "path": "products"
+        },
+        "blog": {
+          "title": "Blog",
+          "path": "blog",
+          "button": "Back to Blog"
+        },
+        "contact": {
+          "title": "Contact Us",
+          "path": "contact"
+        },
+        "printing": {
+          "title": "Printing",
+          "path": "printing"
+        },
+        "packaging": {
+          "title": "Packaging",
+          "path": "packaging"
+        },
+        "premium": {
+          "title": "Premium",
+          "path": "premium"
+        },
+        "portfolio": {
+          "title": "Portfolio",
+          "path": "contact"
+        } 
+    },
+     "components": {
+       "features": {
+         "feature1": {
+           "title": "Highest Standards",
+           "subtitle": "We hold ourselves to a high standard and refuse to compromise on quality"
+          },
+          "feature2": {
+            "title": "Fast Delivery",
+            "subtitle": "Need your products in a hurry? No problem. In most cases we can guarantee delivery within 48 hours"
+          },
+          "feature3": {
+            "title": "Premium Quality",
+            "subtitle": "We are confident our products will exceed your quality expectations."
+          },
+          "feature4": {
+            "title": "Great Service",
+            "subtitle": "Our customer service team is top notch and ready to help you with whatever you need."
+          },
+          "feature5": {
+            "title": "Customized Solutions",
+            "subtitle": "Looking for something unique and special, we are up to the challenge"
+          },
+          "feature6": {
+            "title": "Environmentally Concious",
+            "subtitle": "We source our raw materials from excellent suppliers and recycle all leftover materials."
+          }   
+        },
+        "cta": {
+          "title": "Ready to get Started",
+          "subtitle": "Contact us today to get all your printing and packaging needs!",
+          "contactButton": "Contact Us",
+          "submitButton": "Submit Order"
+        },
+        "contactForm": {
+          "name": {
+            "placeholder": "Full Name",
+            "feedback": "Please provide your full name."
+          },
+          "email": {
+            "placeholder": "Email Address",
+            "feedback1": "Please provide your email address.",
+            "feedback2": "Please provide a valid email address"
+          },
+          "message": {
+            "placeholder": "Your Message",
+            "feedback": "Please enter your message."
+          },
+          "button": {
+             "title": "Send Message"
+          }
+        }
+  }
+}

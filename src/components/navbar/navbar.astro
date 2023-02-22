@@ -1,0 +1,108 @@
+---
+import Container from "@components/container.astro";
+// import Link from "@components/ui/link.astro";
+// import Dropdown from "./dropdown.astro";
+// import logo from '../../../public/logo.png'
+import { LanguageSelector } from "astro-i18next/components";
+import { t } from "i18next";
+import { localizePath } from "astro-i18next";
+
+
+const menuitems = [
+    {
+    title: t("pages.about.title"),
+    path: localizePath("/about"),
+    // log: console.log(localizePath("/about"))
+  },
+  {
+    title: t("pages.services.title"),
+    path: localizePath("/services"),
+  },
+  {
+    title: t("pages.products.title"),
+    path: localizePath("/products"),
+  },
+  // {
+  //   title: t("pages.blog.title"),
+  //   path: t("pages.blog.path"),
+  // },
+  {
+    title: t("pages.contact.title"),
+    path: localizePath("/contact"),
+  },
+];
+---
+
+<Container>
+  <header
+    class="flex flex-col lg:flex-row justify-between items-center my-5"
+    x-data="{ open: false }"
+    x-init="$watch('open', value => console.log(value))">
+    <div class="flex w-full lg:w-auto items-center justify-between">
+      <a href={localizePath("/")} class="text-lg"
+        ><span class="font-bold text-slate-800">TD</span><span
+          class="text-slate-500">Product</span
+        >
+      </a>
+      <div class="block lg:hidden justify-center">
+        <button @click="open = !open" class="text-gray-800">
+          <svg
+            fill="currentColor"
+            class="w-4 h-4"
+            viewBox="0 0 20 20"
+            xmlns="logo">
+            <title>Menu</title>
+            <path
+              x-cloak
+              x-show="open"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M18.278 16.864a1 1 0 01-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 01-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 011.414-1.414l4.829 4.828 4.828-4.828a1 1 0 111.414 1.414l-4.828 4.829 4.828 4.828z"
+            ></path>
+            <path
+              x-show="!open"
+              fill-rule="evenodd"
+              d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav
+    class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0"
+    :class="{ 'block': open, 'hidden': !open }"
+    x-transition>
+    <ul class="flex flex-col lg:flex-row lg:gap-3">
+      {
+        menuitems.map((item, index) => (
+          <li>
+            <a
+            href={item.path}
+            class="flex justify-center lg:px-3 py-2 text-gray-600 hover:text-gray-900">
+            {item.title}
+            </a>
+            </li>
+            ))
+            }
+      </ul>
+      <div class="flex justify-center">
+        <LanguageSelector showFlag={true}/>
+      </div>
+    </header>
+</Container>
+
+<!-- <style>
+  .languages {
+    border: 2px solid var(--color-border);
+    margin-top: 2rem;
+    appearance: none;
+    background-color: white;
+    border-radius: 0.25rem;
+    padding: 0.4em 0.6em;
+    font-family: system-ui, sans-serif;
+    font-size: var(--font-size-base);
+  }
+  .languages:is(:hover, :focus-within) {
+    border-color: #4f39fa;
+  }
+</style> -->

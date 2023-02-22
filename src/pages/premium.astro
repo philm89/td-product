@@ -1,0 +1,32 @@
+---
+import { changeLanguage } from "i18next";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import { Image } from "@astrojs/image/components";
+
+changeLanguage("en");
+---
+
+<Layout title="Premium">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Premium</Fragment>
+      <Fragment slot="desc">Delivering high quality products for over 30 years.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Packaging Made Simple
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Are you looking for corporate and promotional giveaways for your next event?
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        We at TD Product can develop, produce and manufacture almost all kind of made to order promotional item for corporate marketing, events, uniforms and for any other purposes that fits your products and services.
+      </p>
+</div>
+  </Container>
+  <Cta/>
+</Layout>

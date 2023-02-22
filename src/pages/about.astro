@@ -1,0 +1,33 @@
+---
+import { changeLanguage } from "i18next";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
+changeLanguage("en");
+---
+
+<Layout title="About">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">About</Fragment>
+      <Fragment slot="desc">Delivering high quality products for over 40 years.</Fragment>
+    </Sectionhead>
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Packaging Made Simple
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        It's about your success: Our company believes our service is one of our partners' successes, as we are helping you to promote yours.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        TD Product empowers thousands of business owners to have their best products and services out there in the market with our variety of printing and packaging options together with an affordable price, high quality and fast service.Providing everyone the opportunity to customize their material and deliver their message across to their customers.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Along with 38 years of experience, TD Product wants all small, medium or large business owners to get high quality customized printing and / or packaging at enjoyable pricing along with the same standard as those bigger printing companies in the market.
+      </p>
+     </div>
+  </Container>
+  <Cta/>
+</Layout>

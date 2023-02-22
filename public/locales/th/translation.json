@@ -1,0 +1,105 @@
+{
+    "seo": {
+      "title": "TD Product | A Printing and Packaging Company",
+      "description": "จากประสบการณ์ตลอด 40 ปี ทางบริษัทและะทีมงาน ต้องการให้เจ้าของธรุกิจไม่ว่าจะเป็นขนาดเล็ก กลาง หรือ ใหญ่ ได้รับงานพิมพ์หรืองานบรรจุภันณ์ ที่มีคุณภาพสูงเเละสามารถออกเเบบตามความต้องการของลูกค้าในราคาที่ถูกกว่าโรงงานพิมพ์ขนาดใหญ่"
+    },
+    "pages": {
+        "home": {
+          "title1": "All your Printing & Packaging Needs",
+          "subtitle1": "จากประสบการณ์ตลอด 40 ปี ทางบริษัทและะทีมงาน ต้องการให้เจ้าของธรุกิจไม่ว่าจะเป็นขนาดเล็ก กลาง หรือ ใหญ่ ได้รับงานพิมพ์หรืองานบรรจุภันณ์ ที่มีคุณภาพสูงเเละสามารถออกเเบบตามความต้องการของลูกค้าในราคาที่ถูกกว่าโรงงานพิมพ์ขนาดใหญ่",
+          "title2": "Want to know what makes us special",
+          "subtitle2": "TD Product is ready to supply your business with all the printing and packaging services you need."
+        },
+        "about": {
+          "title": "เกี่ยวกับเรา",
+          "path": "เกี่ยวกับเรา"
+        },
+        "services": {
+          "title": "บริการ",
+          "path": "บริการ"
+        },
+        "products": {
+          "title": "สินค้า",
+          "path": "สินค้า"
+        },
+        "blog": {
+          "title": "บล๊อก",
+          "path": "บล๊อก",
+          "button": "Back to บล๊อก"
+        },
+        "contact": {
+          "title": "ติดต่อเรา",
+          "path": "ติดต่อเรา"
+        },
+        "printing": {
+          "title": "สี่งพิมพ์",
+          "path": "สี่งพิมพ์"
+        },
+        "packaging": {
+          "title": "แพ็คเกจจิ้ง",
+          "path": "แพ็คเกจจิ้ง"
+        },
+        "premium": {
+          "title": "ของพรี่เมี่ยม",
+          "path": "ของพรี่เมี่ยม"
+        },
+        "portfolio": {
+          "title": "Portfolio",
+          "path": "contact"
+        }       
+    },
+    "components": {
+      "features": {
+        "feature1": {
+          "title": "Highest Standards",
+          "subtitle": "We hold ourselves to a high standard and refuse to compromise on quality"
+         },
+         "feature2": {
+           "title": "Fast Delivery",
+           "subtitle": "Need your products in a hurry? No problem. In most cases we can guarantee delivery within 48 hours"
+         },
+         "feature3": {
+           "title": "Premium Quality",
+           "subtitle": "We are confident our products will exceed your quality expectations."
+         },
+         "feature4": {
+           "title": "Great Service",
+           "subtitle": "Our customer service team is top notch and ready to help you with whatever you need."
+         },
+         "feature5": {
+           "title": "Customized Solutions",
+           "subtitle": "Looking for something unique and special, we are up to the challenge"
+         },
+         "feature6": {
+           "title": "Environmentally Concious",
+           "subtitle": "We source our raw materials from excellent suppliers and recycle all leftover materials."
+         }   
+       },
+       "cta": {
+         "title": "Ready to get Started",
+         "subtitle": "Contact us today to get all your printing and packaging needs!",
+         "contactButton": "Contact Us",
+         "submitButton": "Submit Order"
+       },
+       "contactForm": {
+         "name": {
+           "placeholder": "ชื่อเต็ม",
+           "feedback": "Please provide your full name."
+         },
+         "email": {
+           "placeholder": "ที่อยู่อีเมล",
+           "feedback1": "Please provide your ที่อยู่อีเมล.",
+           "feedback2": "Please provide a valid ที่อยู่อีเมล"
+         },
+         "message": {
+           "placeholder": "ข้อความ",
+           "feedback": "Please enter ข้อความ."
+         },
+         "button": {
+            "title": "Send Message"
+         }
+       }
+ }
+}
+
+

@@ -1,0 +1,36 @@
+---
+import { changeLanguage } from "i18next";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import { Image } from "@astrojs/image/components";
+
+changeLanguage("th");
+---
+
+<Layout title="เกี่ยวกับเรา">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">เกี่ยวกับเรา</Fragment>
+      <Fragment slot="desc">Delivering high quality products for over 40 years.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Packaging Made Simple
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        บริษัทเรามีความเชื่อเสมอว่า การบริการของเราคือหนี่งในความสำเร็จของของคู่ค้า
+        บริษัท ทีดีโปรดักษ์ 
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        ช่วยเจ้าของธรุกิจหลากหลายเพื่อให้สินค้าหรือการบริการของคู่ค้าได้ออกไปยังสู่ตลาดอย่างดีที่สุด จากความหลากหลายของงานสิ่งพิ่มพ์และบรรจุภันณ์กับราคาที่เป็นกลางที่มาพร้อมกับการบริการรวดเร็ว มีมาตราฐาน ซึ่งทำให้คู่ค้าของเราสามารถได้สินค้าที่ออกเเบบตามความต้องการของคู่ค้าเเละนำสินค้าชองลูกค้าได้ออกไปยังในตลาดตามความต้องการ
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        จากประสบการณ์ตลอด 38 ปี ทางบริษัทและะทีมงาน ต้องการให้เจ้าของธรุกิจไม่ว่าจะเป็นขนาดเล็ก กลาง หรือ ใหญ่ ได้รับงานพิมพ์หรืองานบรรจุภันณ์ ที่มีคุณภาพสูงเเละสามารถออกเเบบตามความต้องการของลูกค้าในราคาที่ถูกกว่าโรงงานพิมพ์ขนาดใหญ่
+      </p>
+    </div>
+  </Container>
+  <Cta/>
+</Layout>

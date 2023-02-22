@@ -1,0 +1,39 @@
+---
+import { Image } from "@astrojs/image/components";
+import printingmachine from "assets/printingmachine.jpg";
+import Link from "@components/ui/link.astro";
+import { t } from "i18next";
+import { localizePath } from "astro-i18next";
+
+---
+
+<main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
+  <div class="py-6 md:order-1 hidden md:block">
+    <Image
+      src={printingmachine}
+      alt="Printing Machine"
+      loading="eager"
+      format="avif"
+    />
+  </div>
+  <div>
+    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">
+      {t("pages.home.title1")}
+    </h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      {t("pages.home.subtitle1")}
+    </p>
+    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <Link
+        href={localizePath("/contact")}
+        rel="noopener">{t("pages.contact.title")}</Link
+      >
+      <Link
+        size="lg"
+        style="outline"
+        href={localizePath("/contact")}
+        rel="noopener">{`View ${t("pages.portfolio.title")}`}</Link
+      >
+    </div>
+  </div>
+</main>

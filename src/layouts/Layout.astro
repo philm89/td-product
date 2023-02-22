@@ -1,0 +1,61 @@
+---
+import { SEO } from "astro-seo";
+import Footer from "@components/footer.astro";
+import Navbar from "@components/navbar/navbar.astro";
+import "@fontsource/inter/variable.css";
+import i18next from "i18next";
+import { HeadHrefLangs } from "astro-i18next/components";
+
+export interface Props {
+  title: string;
+}
+const resolvedImageWithDomain = new URL("/opengraph.jpg", Astro.url).toString();
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang={i18next.language}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href=""/>
+    <meta name="generator" content={Astro.generator} />
+    <HeadHrefLangs />
+
+    <SEO
+      title={`${title}${title && " | "}TD Product`}
+      description="TD Product is a printing and packaging company."
+      twitter={{
+        creator: "@surjithctly",
+        site: "@web3templates",
+        card: "summary_large_image",
+      }}
+      openGraph={{
+        basic: {
+          type: "website",
+          title: `TD Product - A Printing & Packaging Company`,
+          image: resolvedImageWithDomain,
+        },
+        image: {
+          alt: "TD Product Homepage Screenshot",
+        },
+      }}
+    />
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <Footer />
+    <style is:global>
+      /* Improve Page speed */
+      /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
+      img {
+        content-visibility: auto;
+      }
+      /* Avoid Alpine.js Hidden Element Flash */
+      [x-cloak] {
+        display: none;
+      }
+    </style>
+  </body>
+</html>

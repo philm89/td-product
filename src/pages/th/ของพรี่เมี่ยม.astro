@@ -1,0 +1,36 @@
+---
+import { changeLanguage } from "i18next";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import { Image } from "@astrojs/image/components";
+
+changeLanguage("th");
+---
+
+<Layout title="ของพรี่เมี่ยม">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">ของพรี่เมี่ยม</Fragment>
+      <Fragment slot="desc">Delivering high quality products for over 30 years.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Packaging Made Simple
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        สินค้าพรีเมี่ยมสำคัญอย่างไร
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        สินค้าพรีเมี่ยมสามารถช่วยให้คนที่ได้รับของเเจกจากเรานึกถึง ผู้ให้ หรือ แบรนด์ เเละเป็นตัวเเทนของแบรนด์ได้ ฉ นั้น ไม่ว่าจะเป็นของชำรวยในงานเเต่ง สินค้าเเจกให้กับลูกค้าในงานอีเวนต์ต่างๆของบริษัท 
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        ทางเราสามารถจัดหาสินค้าได้ความต้องการ
+        ในคุณภาพที่ดี
+      </p>
+    </div>
+  </Container>
+  <Cta/>
+</Layout>

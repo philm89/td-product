@@ -1,0 +1,31 @@
+---
+import { changeLanguage } from "i18next";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import { Image } from "@astrojs/image/components";
+
+changeLanguage("en");
+---
+
+<Layout title="packaging">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Packaging</Fragment>
+      <Fragment slot="desc">Delivering high quality products for over 30 years.</Fragment>
+    </Sectionhead>
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Packaging Made Simple
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        The first thing before your customers make their decision to purchase any product is the design of the package.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Whether the packaging is a paper bag, box or plastic container, we are here to help. The material and packaging design can play a big role in consumer buying decisions.
+      </p>
+     </div>
+  </Container>
+  <Cta/>
+</Layout>

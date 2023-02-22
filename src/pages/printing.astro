@@ -1,0 +1,75 @@
+---
+import { changeLanguage } from "i18next";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import { Image } from "@astrojs/image/components";
+
+changeLanguage("en");
+
+const examples = [
+  {
+    name: "Brochures"
+  },
+  {
+    name: "Business cards"
+  },
+  {
+    name: "Catalogs"
+  },
+  {
+    name: "Corporate Newspapers"
+  },
+  {
+    name: "Event materials"
+  },
+  {
+    name: "Folders"
+  },
+  {
+    name: "Invitation Cards"
+  },
+  {
+    name: "Magazines"
+  },
+  {
+    name: "Menus"
+  },
+  {
+    name: "Labels"
+  },
+  {
+    name: "Posters"
+  },
+  {
+    name: "Stickers"
+  },
+]
+---
+
+<Layout title="Printing">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Printing</Fragment>
+      <Fragment slot="desc">Delivering high quality products for over 30 years.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Packaging Made Simple
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Printing is a tool that helps you communicate what you want your customers to understand about your products/services. We can help improve your communication with our services such as:
+      </p>
+      <ul>
+        {examples.map((item) => (
+          <ul>
+            <li class="list-disc">{item.name}</li>
+            </ul>
+        ))}
+      </ul>
+    </div>
+  </Container>
+  <Cta/>
+</Layout>
