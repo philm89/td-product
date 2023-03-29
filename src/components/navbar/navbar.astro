@@ -1,26 +1,21 @@
 ---
 import Container from "@components/container.astro";
-// import Link from "@components/ui/link.astro";
-// import Dropdown from "./dropdown.astro";
-// import logo from '../../../public/logo.png'
 import { LanguageSelector } from "astro-i18next/components";
 import { t } from "i18next";
-import { localizePath } from "astro-i18next";
-
+import { localizePath, localizeUrl } from "astro-i18next";
 
 const menuitems = [
     {
     title: t("pages.about.title"),
-    path: localizePath("/about"),
-    // log: console.log(localizePath("/about"))
-  },
+    path: "about"
+    },
   {
     title: t("pages.services.title"),
-    path: localizePath("/services"),
+    path: "services",
   },
   {
     title: t("pages.products.title"),
-    path: localizePath("/products"),
+    path: "products",
   },
   // {
   //   title: t("pages.blog.title"),
@@ -28,7 +23,7 @@ const menuitems = [
   // },
   {
     title: t("pages.contact.title"),
-    path: localizePath("/contact"),
+    path: "contact",
   },
 ];
 ---
@@ -77,7 +72,7 @@ const menuitems = [
         menuitems.map((item, index) => (
           <li>
             <a
-            href={item.path}
+            href={localizePath(item.path)}
             class="flex justify-center lg:px-3 py-2 text-gray-600 hover:text-gray-900">
             {item.title}
             </a>
@@ -86,7 +81,9 @@ const menuitems = [
             }
       </ul>
       <div class="flex justify-center">
-        <LanguageSelector showFlag={true}/>
+        <LanguageSelector showFlag={true}>
+          
+        </LanguageSelector>
       </div>
     </header>
 </Container>

@@ -12,12 +12,11 @@ export default {
             "printing": "สี่งพิมพ์",
             "packaging": "แพ็คเกจจิ้ง",
             "premium": "ของพรี่เมี่ยม",
-            "portfolio": "portfolio"
+            "portfolio": "ผลงานของเรา"
         },
     },
 
 };
-
 
 
 
